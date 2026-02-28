@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.board {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: 4px solid black;
+    position: relative;
+}
+
+.cell {
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.cell:nth-child(odd) {
+    background: #fff3e0;
+}
+
+.cell:nth-child(even) {
+    background: #e0f7fa;
+}
+
+/* 🐍 Snake 1 (98 → 55) */
+.snake1 {
+    position: absolute;
+    width: 160px;
+    top: 20px;
+    left: 350px;
+    transform: rotate(25deg);
+}
+
+/* 🐍 Snake 2 (70 → 40) */
+.snake2 {
+    position: absolute;
+    width: 140px;
+    top: 200px;
+    left: 100px;
+    transform: rotate(-35deg);
+}
+
+/* 🪜 Ladder 1 (4 → 25) */
+.ladder1 {
+    position: absolute;
+    width: 140px;
+    bottom: 40px;
+    left: 60px;
+    transform: rotate(-25deg);
+}
+
+/* 🪜 Ladder 2 (30 → 60) */
+.ladder2 {
+    position: absolute;
+    width: 130px;
+    bottom: 220px;
+    left: 400px;
+    transform: rotate(20deg);
+}
+/* 🐍 Snake 1 (98 → 55) */
+.snake1 {
+    position: absolute;
+    width: 160px;
+    top: 20px;
+    left: 440px;
+    transform: rotate(25deg);
+}
+
+/* 🐍 Snake 2 (70 → 40) */
+.snake2 {
+    position: absolute;
+    width: 140px;
+    top: 200px;
+    left: 200px;
+    transform: rotate(-35deg);
+}
+
+/* 🐍 Snake 3 (84 → 60) */
+.snake3 {
+    position: absolute;
+    width: 130px;
+    bottom: 50px;
+    left: 100px;
+    transform: rotate(30deg);
+}
+
+/* 🐍 Snake 4 (52 → 30) */
+.snake4 {
+    position: absolute;
+    width: 120px;
+    top: 20px;
+    left: 100px;
+    transform: rotate(-25deg);
+}
+
+/* 🪜 Ladder 1 (4 → 25) */
+.ladder1 {
+    position: absolute;
+    width: 100px;
+    bottom: 40px;
+    left: 400px;
+    transform: rotate(-25deg);
+}
+
+/* 🪜 Ladder 2 (30 → 60) */
+.ladder2 {
+    position: absolute;
+    width: 130px;
+    bottom: 220px;
+    left: 30px;
+    transform: rotate(20deg);
+}
+
+/* 🪜 Ladder 3 (10 → 45) */
+.ladder3 {
+    position: absolute;
+    width: 130px;
+    top: 50px;
+    left: 300px;
+    transform: rotate(-15deg);
+}
+
+/* 🪜 Ladder 4 (65 → 90) */
+.ladder4 {
+    position: absolute;
+    width: 120px;
+    bottom:200px;
+    left: 400px;
+    transform: rotate(35deg);
+}
+.link a{
+  text-decoration: none;
+  position: absolute;
+  left:10%;
+  top: 10%; 
+  color: #ee0b0b;
+}
