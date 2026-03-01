@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.chessboard{
+    border: 2px solid black;
+    width: 480px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chessboard div{
+    width: calc(100%/8);
+    height: calc(100%/8);
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chessboard div:nth-of-type(16n+1),
+.chessboard div:nth-of-type(16n+3),
+.chessboard div:nth-of-type(16n+5),
+.chessboard div:nth-of-type(16n+7),
+.chessboard div:nth-of-type(16n+10),
+.chessboard div:nth-of-type(16n+12),
+.chessboard div:nth-of-type(16n+14),
+.chessboard div:nth-of-type(16n+16){
+    background: #eee;
+}
+
+.chessboard div:nth-of-type(16n+2),
+.chessboard div:nth-of-type(16n+4),
+.chessboard div:nth-of-type(16n+6),
+.chessboard div:nth-of-type(16n+8),
+.chessboard div:nth-of-type(16n+9),
+.chessboard div:nth-of-type(16n+11),
+.chessboard div:nth-of-type(16n+13),
+.chessboard div:nth-of-type(16n+15){
+    background: #444;
+    color: white;
+}
+.chessboard div:hover{
+    background: green !important;
+}
+.link a{
+  text-decoration: none;
+  position: absolute;
+  left: 10%;
+  top: 10%; 
+  color: #333578;
+}
